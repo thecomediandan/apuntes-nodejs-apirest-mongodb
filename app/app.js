@@ -11,7 +11,7 @@ import { router } from './../config/movie.routes.js'
 
 dotenv.config()
 
-const portMongo = envVar.get('MONGO_PORT').required().asInt()
+const portMongo = envVar.get('PORT').required().asInt()
 
 const appMongo = expressMongo()
 appMongo.use(bodyParser.json())
