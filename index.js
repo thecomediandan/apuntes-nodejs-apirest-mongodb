@@ -247,3 +247,4 @@ appMongo.use('/movies', router)
 
 appMongo.listen(portMongo, () => console.log(`Se esta escuchando el puerto de MongoDB ${portMongo}`))
 
+// * Para el despliegue en Railway es necesario crear variables de entorno para el repositorio de MONGO_URL y MONGO_DB_NAME y linkearlas con las de MONGODB del servidor.
